@@ -1,0 +1,10 @@
+millas=float(input("Ingrese la distancia de su viaje en millas: "))
+galon= float(input("Ingrese cuantas millas rinde un galón de gasolina en su auto: "))
+pre=float(input("Ingresa el precio de la gasolina por galón"))
+dias=int(input("Ingrese cuantos días viajará"))
+
+
+preida=(millas/galon)*pre
+resultado=preida*2#porque es ida y vuelta
+
+print("Su total en el viaje es de",resultado, "pesos")
