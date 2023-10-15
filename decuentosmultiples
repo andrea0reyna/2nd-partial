@@ -1,0 +1,44 @@
+pre= int(input("Ingrese el precio del producto que desea comprar: "))
+tipo= input("Ingrese la categoría del producto, A. B. o C.: ")
+cant=int(input("Ingrese la cantidad de los productos que desea comprar:"))
+
+if tipo=="A" or tipo=="a":
+  if cant >= 10:
+    prec= pre*cant
+    desc = (prec * 0.15)
+    tot = prec - desc
+    print("Su precio total con el descuento de 10% y 5% es", tot, "pesos")
+  else:
+    prec=pre*cant
+    desca = prec * 0.10
+    tote = prec - desca
+    print("Se le hará un descuento del 10%")
+    print("A su total de", prec, "pesos se convierte a un total de", tote, "pesos")
+    
+elif tipo=="B" or tipo=="b":
+  if cant >= 10:
+    prec= pre*cant
+    desc = (prec * 0.10)
+    tot = prec - desc
+    print("Su precio total con el descuento de 5% y 5% es", tot, "pesos")
+  else:
+    prec=pre*cant
+    desca = prec * 0.05
+    tote = prec - desca
+    print("Se le hará un descuento del 5%")
+    print("A su total de", prec, "pesos se convierte a un total de", tote, "pesos")
+
+elif tipo=="C" or tipo=="c":
+  if cant >= 10:
+    prec= pre*cant
+    desc = (prec * 0.07)
+    tot = prec - desc
+    print("Su precio total con el descuento de 5% y 2% es", tot, "pesos")
+  else:
+    prec=pre*cant
+    desca = prec * 0.02
+    tote = prec - desca
+    print("Se le hará un descuento del 2%")
+    print("A su total de", prec, "pesos se convierte a un total de", tote, "pesos")
+
+    
