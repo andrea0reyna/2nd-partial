@@ -1,0 +1,16 @@
+  print("Tomando en cuenta que cada kg es igual a 0.97 kal y que 1km es igual a 30min")
+  if peso <= 70:
+    kal=peso*0.97
+    kmts=t/30
+    resultado=kmts*67.9
+    print("Has quemado aprox",resultado,"calorías")
+  elif peso<70:
+      kal=peso*0.97
+      kmts=t/30
+      resultado=kmts*58.2
+      print("Has quemado aprox",resultado,"calorías")
+elif act=="bicicleta":
+  print("Cada kilometro se quema 23kal y 7min es 1km")
+  kmts=t/7
+  resultado=kmts*23
+  print("Has quemado aprox",resultado,"calorías")
