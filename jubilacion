@@ -1,0 +1,11 @@
+edad=int(input("ingrese su edad acutual"))
+edadj=int(input("ingrese la edad a la que desea retirarse"))
+cantj=float(input("¿Que cantidad de dinero desea tener para su jubilación?"))#fv
+#Tenemos 25% de interes anual 
+r=0.25/12
+n=(edadj-edad)*12
+t= edadj-edad
+num= cantj*r
+deno=((1+r)**n-1*(1+r)**(-t))
+pmt=num/deno
+print("El pago mensual necesario para la jubilación es de",pmt)
