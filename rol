@@ -1,0 +1,165 @@
+print("Bienvenido al juego de roles Medivales")
+print("Para este juego se usa un dado de 12 caras")
+personaje=int(input("El juego es de un caballero medieval escoje 1 para jugar: "))
+
+if personaje==1:
+  print("Eres un caballero que es muy famoso en la zona, la apariencia tu la puedes decidir, sin embargo dependiendo de tu proxima tirada tendrás un escudero o no.")
+  escudero=int(input("Si el numero es mayor a 6 contarás con uno, si no te aventurarás solo en esta ocasión: "))
+  if escudero>=6:
+    print("El nombre de tu escudero es Arthur, él es un muchacho rubio de 12 años y busca convertirse en caballero algún día, pero es pobre y está desnutrido.")
+    print("El rey está gravemente enfermo y tú, por tener presencia en el reino, eres consciente de que algún miembro de su mesa será el próximo rey, y tienes conocimiento del mandato del difunto hijo del rey.")
+    rey=input("Eres parte de la mesa real, ¿pero quieres ser el próximo rey?, esto puede afectar gravemente la historia, responde si o no: ")
+
+    if rey=="Si" or rey=="si":
+      reyp=int(input("Es necesario obtener más de 8 puntos, en otro caso se anulará la respuesta anterior, ingresa los puntos: "))
+      if reyp >=8:
+        print("La aventura será pesada y has ganado varios enemigos en el camino, pero estoy seguro de que darás lo mejor de ti.")
+        print("Al siguiente día te comentan que el rey esta muerto pero tu en busca del trono decides matar a los demás miembros de la mesa, logras matar casi a todos pero en ese momento te das cuenta de que el reino esta bajo ataque, y tu por tu codicia no te diste cuenta y masacraste a tus hermnos y te mato un mago oscuro")
+      else:
+        print("Te tomas las cosas con calma y decides descansar al día siguiente.")
+        print("Al día siguiente ves que el castillo esta bajo ataque por magos de magia oscura que estan en contra de la monarquia y del odio de la gente hacia ello por lo que planean matar al rey y conquistar el reino")
+        print("Tu buscas a los caballeros de la mesa pero ves que la mayoría se esta matando entre sí para saber quien va a ser el nuevo Rey ya que el anterior murió en la noche y nadie te hace caso")
+        muerte1=input("Un caballero te ataca y pelean, sobrevives? responde si o no: ")
+        if muerte1=="si":
+          muerte1p=int(input("es necesario más de 7 puntos para lograrlo: "))
+          if muerte1p>=7:
+            print("El caballero murió pero tu debes de cuidar a la princesa por lo que corres a su alcoba")
+            print("Le comentas a la princesa lo sucedido y ella se entristece pero confía en ti por lo que huyen al pueblo ")
+            print("Escapan al pueblo y te encuentras Arthur el niño de la vez pasada, el te dice que el daría su vida por el reino por lo que armado de una sola espada iba a ir por la princesa")
+            print("El se sorprende de reconocer a la princesa, pero no hay tiempo para eso y te preguntas, si 1 debes huir con Lili o 2dejar a Lili en el pueblo e ir a luchar con los magos oscuros?")
+            respuesta=int(input("contesta con 1 o 2 : "))
+            if respuesta==1:
+              respuestap=int(input("Es necesario más de 6 puntos: "))
+              if respuestap >=6:
+                print("huyes lo más lejos que puedes junto con Arthur los 2 saben que ya no hay lugar al cual volver, pero no te logras dar cuenta que han entrado al bosque prohibido")
+                print("Lo lamento mucho pero estas condenado, entraste al bosque prohibido y esta prohibido por una razón, por lo que te encuentras un hombre alto y de traje, que te termino matando.FIN ")
+              else:
+                print("Decides dejar a Lili con la abuela adoptiva de Arthur, tu desconfias de Arthur pero notas que tiene talento en la batalla")
+                print("Se han encontrado con Saruman, el mago más poderoso y una antigua leyenda de la magia oscura, el te pregunta por Lili ya que es descendiente de su hermano uno de los magos más poderosos de la historia su difunto hermano que se suicido por el deprecio del pueblo hacia los magos")
+                print("Le contestas a Saruman que jamás la encontrará y comienzas a luchar con el, aún sabiendo que es casi imposible que ganes")
+                des=input("Y te preguntas si debes de decirle a Arther que escape 1 o que te ayude a pelear2: ")
+                if des==1:
+                      print("Saruman acabó con la vida de ambos y fallaste en tu promesa FIN")
+                else:
+                      print("Tu le ruegas a Arthur que escape, pero el busca un arma con la cual ayudarte, encuentra una espada brillante dentro de una piedra y justo despues de ser alcanzado por su baculo, ves a Arthur llegar por la espalday matar a Saruman")
+                      print("Sabes que vas a morir pero le haces prometer a Arthur que cuidará de Lili y que reinara con justicia, ya que al sacar la espada de la piedra ahora es el nuevo rey, el lo promete y te dice que será el mejor rey de todo camelot, tu mueres, no tuviste una vida larga pero almenos fue buena ")
+  else:
+    print("El rey se decepciona ya que el quería que tu fueras el nuevo rey y te manda por su medicina ")
+
+else:
+    print("No cuentas con escudero, eso significa que tu riqueza ha bajado de nivel, por lo que en un futuro no tendrás acceso a armas de gran calidad.")
+    print("No eres parte de la mesa real, pero sabes que el rey está gravemente enfermo y conoces el mandato del difunto hijo del rey ")
+    print("El rey te ha mandado a llamar y te dice que confía plenamente en ti por lo que te dice que cuides el reino debido a que es muy probable que los miembros de su mesa se intenten matar entre si para conseguir su corona")
+    print("El quiere que le prometas que cuidaras a su hija, cuando muera , la princesa Lili,¿Aceptas esta promesa?")
+    promesa=(input("si o no: "))
+    if promesa=="si":
+      promesa=int(input("es necesario más de 4 puntos para lograrlo: " ))
+      if promesa >=4:
+        print("El rey esta muy agradecido por tu confianza y te pide que te retires ya que se siente muy mal ")
+        print("Así que decides conocer a Lili que esta en su alcoba ")
+        print("Nadie en el reino conocía a la princesa por que siempre estaba encerrada en su torre, al entrar te das cuenta de que es una niña y tiene 13 años ")
+        salir=input("Lili te dice que ella desea conocer el pueblo y que planea ir disfrazada de campesina, ya que ella quiere conocer a su gente, te pide que la acompañes ¿aceptas? responde si o no: ")
+        if salir=="si":
+          salirp=int(input("es necesario más de 5 puntos para lograrlo" ))
+          if salirp >=4:
+            print("La acompañas y te ganas su confianza, a lo lejos notas que ella logro divisar a un chicno rubio y flaco, ves que el se le acerca y le regala un trozo de pan y ella le regresa una sonrisa")
+            print("despues de eso regresaron al castillo y se prepararon para el día siguiente")
+            print("Al día siguiente ves que el castillo esta bajo ataque por magos de magia oscura que estan en contra de la monarquia y del odio de la gente hacia ello por lo que planean matar al rey y conquistar el reino")
+            print("Tu buscas a los caballeros de la mesa pero ves que la mayoría se esta matando entre sí para saber quien va a ser el nuevo Rey ya que el anterior murió en la noche y nadie te hace caso")
+            muerte1=input("Un caballero te ataca y pelean, sobrevives? responde si o no: ")
+            if muerte1=="si":
+              muerte1p=int(input("es necesario más de 7 puntos para lograrlo: "))
+              if muerte1p>=7:
+                print("El caballero murió pero tu debes de cuidar a la princesa por lo que corres a su alcoba")
+                print("Le comentas a la princesa lo sucedido y ella se entristece pero confía en ti por lo que huyen al pueblo ")
+                print("Escapan al pueblo y te encuentras Arthur el niño de la vez pasada, el te dice que el daría su vida por el reino por lo que armado de una sola espada iba a ir por la princesa")
+                print("El se sorprende de reconocer a la princesa, pero no hay tiempo para eso y te preguntas, si 1 debes huir con Lili o 2dejar a Lili en el pueblo e ir a luchar con los magos oscuros?")
+                respuesta=int(input("contesta con 1 o 2 : "))
+                if respuesta==1:
+                  respuestap=int(input("Es necesario más de 6 puntos: "))
+                  if respuestap >=6:
+                    print("huyes lo más lejos que puedes junto con Arthur los 2 saben que ya no hay lugar al cual volver, pero no te logras dar cuenta que han entrado al bosque prohibido")
+                    print("Lo lamento mucho pero estas condenado, entraste al bosque prohibido y esta prohibido por una razón, por lo que te encuentras un hombre alto y de traje, que te termino matando.FIN ")
+                  else:
+                    print("Decides dejar a Lili con la abuela adoptiva de Arthur, tu desconfias de Arthur pero notas que tiene talento en la batalla")
+                    print("Se han encontrado con Saruman, el mago más poderoso y una antigua leyenda de la magia oscura, el te pregunta por Lili ya que es descendiente de su hermano uno de los magos más poderosos de la historia su difunto hermano que se suicido por el deprecio del pueblo hacia los magos")
+                    print("Le contestas a Saruman que jamás la encontrará y comienzas a luchar con el, aún sabiendo que es casi imposible que ganes")
+                    des=input("Y te preguntas si debes de decirle a Arther que escape 1 o que te ayude a pelear2: ")
+                    if des==1:
+                      print("Saruman acabó con la vida de ambos y fallaste en tu promesa FIN")
+                    else:
+                      print("Tu le ruegas a Arthur que escape, pero el busca un arma con la cual ayudarte, encuentra una espada brillante dentro de una piedra y justo despues de ser alcanzado por su baculo, ves a Arthur llegar por la espalday matar a Saruman")
+                      print("Sabes que vas a morir pero le haces prometer a Arthur que cuidará de Lili y que reinara con justicia, ya que al sacar la espada de la piedra ahora es el nuevo rey, el lo promete y te dice que será el mejor rey de todo camelot, tu mueres, no tuviste una vida larga pero almenos fue buena ")
+                  
+                
+                else:
+                    print("Decides dejar a Lili con la abuela adoptiva de Arthur, tu desconfias de Arthur pero notas que tiene talento en la batalla")
+                    print("Se han encontrado con Saruman, el mago más poderoso y una antigua leyenda de la magia oscura, el te pregunta por Lili ya que es descendiente de su hermano uno de los magos más poderosos de la historia su difunto hermano que se suicido por el deprecio del pueblo hacia los magos")
+                    print("Le contestas a Saruman que jamás la encontrará y comienzas a luchar con el, aún sabiendo que es casi imposible que ganes")
+                    des=input("Y te preguntas si debes de decirle a Arther que escape 1 o que te ayude a pelear2: ")
+                    if des==1:
+                         print("Saruman acabó con la vida de ambos y fallaste en tu promesa FIN")
+                    else:
+                      print("Tu le ruegas a Arthur que escape, pero el busca un arma con la cual ayudarte, encuentra una espada brillante dentro de una piedra y justo despues de ser alcanzado por su baculo, ves a Arthur llegar por la espalday matar a Saruman")
+                      print("Sabes que vas a morir pero le haces prometer a Arthur que cuidará de Lili y que reinara con justicia, ya que al sacar la espada de la piedra ahora es el nuevo rey, el lo promete y te dice que será el mejor rey de todo camelot, tu mueres, no tuviste una vida larga pero almenos fue buena ")
+                
+              else:
+                print("Como te moriste, xd mejor suerte a la prox FIN")
+            else:
+              print("Como te moriste, xd mejor suerte a la prox FIN")
+          elif salirp<4:
+             print("Ella se enoja contigo y desconfia de ti, no salió del castillo, y tu descansaste en tu casa ")
+             print("Ella se enoja contigo y desconfia de ti, no salió del castillo, y tu descansaste en tu casa ")
+             print("Al día siguiente ves que el castillo esta bajo ataque por magos de magia oscura que estan en contra de la monarquia y del odio de la gente hacia ello por lo que planean matar al rey y conquistar el reino")
+             print("Tu buscas a los caballeros de la mesa pero ves que la mayoría se esta matando entre sí para saber quien va a ser el nuevo Rey ya que el anterior murió en la noche y nadie te hace caso")
+             muerte1=input("Un caballero te ataca y pelean, sobrevives? responde si o no: ")
+             if muerte1=="si":
+              muerte1p=int(input("es necesario más de 7 puntos para lograrlo: "))
+              if muerte1p>=7:
+                print("El caballero murió pero tu debes de cuidar a la princesa por lo que corres a su alcoba")
+                print("Le dices que es urgente que huyan por que el castillo esta bajo ataque y que su padre ha muerto, ella llora pero dice que no cree en ti y hasya que no lo vea no lo creerá")
+                print("en ese momento llego un mago oscuro y secuestro a la princesa, te lanzo un hechizo y ahora eres un sapo. FIN")
+              else:  
+                print("Te moriste, F FIN")
+             else:
+               print("Te moriste, F FIN")
+        else:
+          print("Ella se enoja contigo y desconfia de ti, no salió del castillo, y tu descansaste en tu casa ")
+          print("Al día siguiente ves que el castillo esta bajo ataque por magos de magia oscura que estan en contra de la monarquia y del odio de la gente hacia ello por lo que planean matar al rey y conquistar el reino")
+          print("Tu buscas a los caballeros de la mesa pero ves que la mayoría se esta matando entre sí para saber quien va a ser el nuevo Rey ya que el anterior murió en la noche y nadie te hace caso")
+          muerte1=input("Un caballero te ataca y pelean, sobrevives? responde si o no: ")
+          if muerte1=="si":
+            muerte1p=int(input("es necesario más de 7 puntos para lograrlo: "))
+            if muerte1p>=7:
+              print("El caballero murió pero tu debes de cuidar a la princesa por lo que corres a su alcoba")
+              print("Le dices que es urgente que huyan por que el castillo esta bajo ataque y que su padre ha muerto, ella llora pero dice que no cree en ti y hasya que no lo vea no lo creerá")
+              print("en ese momento llego un mago oscuro y secuestro a la princesa, te lanzo un hechizo y ahora eres un sapo. FIN")
+            else:
+              print("Te moriste, me saludas a San Pedro bye.FIN ")
+          else:
+            print("Te moriste, me saludas a San Pedro bye.FIN")
+      else:
+        print("El rey se enoja y decepciona de ti por lo que te deja el trabajo más peligros de todos, ir al bosque y buscar su medicina")
+        print("Esto es casi imposible de manera de que si no la encuetres lo más probable es que termines muerto")
+        medicina=input("Lograste encontrar la medicina? responde si o no")
+        if medicina=="si":
+          print("Necesitas un 12 para lograrlo")
+          if medicina==12:
+            print("No lo puedo creer has salvado al reino, lamentablemente te encuentras un troll en tu camino a casa y te mata, perdona la historia necesita drama. FIN")
+          else:
+            print("Lo lamento mucho pero estas condenado, entrste al bosque prohibido y esta prohibido por una razón, por lo que te encuentras un hombre alto y de traje, que te termino matando.FIN")
+        else :
+          print("Lo lamento mucho pero estas condenado, entrste al bosque prohibido y esta prohibido por una razón, por lo que te encuentras un hombre alto y de traje, que te termino matando.FIN")
+        
+    else:
+      print("El rey se enoja y decepciona de ti por lo que te deja el trabajo más peligros de todos, ir al bosque y buscar su medicina")
+      print("Esto es casi imposible de manera de que si no la encuetres lo más probable es que termines muerto")
+      medicina=input("Lograste encontrar la medicina? responde si o no: ")
+      if medicina=="si":
+        medicina2=int(input("Necesitas un 12 para lograrlo: "))
+        if medicina2==12:
+          print("No lo puedo creer has salvado al reino, lamentablemente te encuentras un troll en tu camino a casa y te mata, perdona la historia necesita drama. FIN")
+        else:
+          print("Lo lamento mucho pero estas condenado, entrste al bosque prohibido y esta prohibido por una razón, por lo que te encuentras un hombre alto y de traje, que te termino matando.FIN")
+      else :
+        print("Lo lamento mucho pero estas condenado, entraste al bosque prohibido y esta prohibido por una razón, por lo que te encuentras un hombre alto y de traje, que te termino matando.FIN")
