@@ -1,0 +1,13 @@
+print("Ingresa los ingredientes que usaste y su valor nutricional, maximo 10 en total")
+ing1=float(input("Ingresa el valor nutricional de tu primer igrediente"))
+ing2=float(input("Ingresa el valor nutricional de tu segundo igrediente"))
+ing3=float(input("Ingresa el valor nutricional de tu tercer igrediente"))
+ing4=float(input("Ingresa el valor nutricional de tu cuarto igrediente"))
+ing5=float(input("Ingresa el valor nutricional de tu quinto igrediente"))
+ing6=float(input("Ingresa el valor nutricional de tu sexto igrediente"))
+ing7=float(input("Ingresa el valor nutricional de tu septimo igrediente"))
+ing8=float(input("Ingresa el valor nutricional de tu octavo igrediente"))
+ing9=float(input("Ingresa el valor nutricional de tu noveno igrediente"))
+ing10=float(input("Ingresa el valor nutricional de tu décimo igrediente"))
+valor =(ing1+ing2+ing3+ing4+ing5+ing6+ing7+ing8+ing9+ing10)/100
+print("El valor nutricional de tu comida es",valor)
