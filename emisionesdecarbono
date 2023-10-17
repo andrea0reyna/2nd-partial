@@ -1,0 +1,9 @@
+ruedas=int(input("Ingrese el número de ruedas de su vehiculo"))
+ene=input("Ingrese el tipo de combustible que utiliza, a)electricidad, b)gasolina, o c)diesel: . ")
+co2=int(input("Ingresa el número de emesiones de carbono tiene tu vehiculo debe ser de 0 a 300: "))
+if ruedas=="4" and ene=="a":
+  print("Es un vehículo electrico y tiene pocas emisiones de carbono")
+elif ruedas>4 and ene=="b" or ene=="c"and co2>=150:
+  print("Tu vehículo es grande y contaminante")
+else:
+  print("Tu vehículo es de tipo",ene)
