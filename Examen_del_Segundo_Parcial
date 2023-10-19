@@ -1,0 +1,27 @@
+print("Este es un diagnostico para las enfermedades respiratorias,a countinuació le haremos un serie de preguntas para lograrlo.")
+temp=float(input("Ingrese su temperatura corporal actual en grados celsius: "))
+dias=int(input("Ingrese los días que lleva con los sintomas actuales: "))
+print("Responde si o no a las siguientes preguntas")
+
+sin=input("Presenta tos ?: ")
+sin2=input("Presenta fatiga ?: ")
+sin3=input("Presenta pérdida de peso en los ultimos días ?: ")
+sin4=input("Presenta dolor de garganta ?: ")
+sin5=input("Presenta dificultad para respirar ?: ")
+
+if temp <= 36.5:
+  print("No cuenta con fiebre ")
+elif temp >36.5 and temp <= 38:
+  print("Cuenta con fiebre baja")
+elif temp > 38:
+  print("Tiene fiebre alta ")
+
+if dias >= 7 and sin=="si" or sin=="Si" and sin2=="Si" or sin2=="si" and sin3 =="si":
+  print("Tiene una enfermedad crónica ")
+
+if temp>= 36 and temp<=36.6 and sin=="si" or sin=="Si":
+  print("Tiene una infección respiratoria leve")
+elif temp>36.6 and temp<38 and sin=="si" or sin=="Si" or sin4=="si" or sin4=="Si":
+  print("Tiene una infección respiratoria media")
+elif temp>=38 and sin5=="si" or sin5=="Si":
+  print("Tiene una infección repiratoria grave")
